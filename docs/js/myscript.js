@@ -16,7 +16,6 @@ $(function(){
     });
 
     $("#box2").on("click",function(){
-        //alert("box1 clicked!");
         if(LED2_S==false){
             Puck.eval("LED2.set()");
             LED2_S = true;
@@ -35,5 +34,13 @@ $(function(){
             LED3_S = false;
         }
     });
+
+    //明るさセンサ取得
+    $("#box7").on("click",function(){
+        Puck.eval("Puck.light()",function(x){
+            $("#box7").text(x.toFixed(2));
+        });
+    });
+
 
 });
