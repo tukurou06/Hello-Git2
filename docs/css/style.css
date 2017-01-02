@@ -1,0 +1,48 @@
+/* 全体(デスクトップPCとスマホ)に適用するCSS */
+html,body
+{
+    height: 100%;    
+}
+
+.wrapper
+{
+	width: 800px ;
+    height: 100%;
+	margin: 0 auto ;	/* 左右に[auto]を指定することで、真ん中に寄る */
+	padding: 0 ;		/* 上下左右の余白を0にしておく */
+}
+
+.cbox1
+{
+    width: 30%;
+    height: 20%;
+    /*line-height: 200px;*/
+    display: inline-block;
+    font-size: 24pt;
+    margin: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#box1{    background-color: red;}
+#box2{    background-color: greenyellow;}
+#box3{    background-color: dodgerblue;}
+#box4{    background-color: orange;}
+#box5{    background-color: yellow;}
+#box6{    background-color: mediumpurple;}
+#box7{    background-color: palevioletred;}
+#box8{    background-color: limegreen;}
+#box9{    background-color: cornflowerblue;}
+#box10{    background-color: lightcoral;}
+#box11{    background-color: pink;}
+#box12{    background-color: lightblue;}
+
+/* スマホだけに適用するCSS */
+@media screen and ( max-width:479px )
+{
+	.wrapper
+	{
+		width: auto ;
+		padding: 0 10px ;		/* 左右の余白 */
+	}
+}
