@@ -42,5 +42,11 @@ $(function(){
         });
     });
 
+    //温度センサ取得
+    $("#box8").on("click",function(){
+        Puck.eval("E.getTemperature()",function(x){
+            $("#box8").text(x.toFixed(1));
+        });
+    });
 
 });
