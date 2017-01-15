@@ -38,14 +38,14 @@ $(function(){
     //明るさセンサ取得
     $("#box7").on("click",function(){
         Puck.eval("Puck.light()",function(x){
-            $("#box7").text(x.toFixed(2));
+            $("#box7 div").text(x.toFixed(2));
         });
     });
 
     //温度センサ取得
     $("#box8").on("click",function(){
         Puck.eval("E.getTemperature()",function(x){
-            $("#box8").text(x.toFixed(1));
+            $("#box8 div").text(x.toFixed(1));
         });
     });
 
